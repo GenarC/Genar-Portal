@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "678149357835",
+    "firebase_url": "https://genar-portal.firebaseio.com",
+    "project_id": "genar-portal",
+    "storage_bucket": "genar-portal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678149357835:android:55dd52be87632c25",
+        "android_client_info": {
+          "package_name": "com.genar.portal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678149357835-njfkthcvbsr6clvlbtvffgcge27k8q6u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.genar.portal",
+            "certificate_hash": "127b1cda77e4ab45f6814da1b4ba572a324d82f9"
+          }
+        },
+        {
+          "client_id": "678149357835-91b8ghf155r2ppsek00b8og23vrk5c52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfsROV9_GzcLfvorn6XBRoEFqUW0f56K0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678149357835-91b8ghf155r2ppsek00b8og23vrk5c52.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
