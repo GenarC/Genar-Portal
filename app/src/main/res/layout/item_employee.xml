@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/employee_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="5dp"
+    android:clickable="true"
+    android:theme="@style/Base.CardView"
+    card_view:cardBackgroundColor="@color/colorCardBackground"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="6dp">
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/empitem_swipelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/ib_skype"
+                android:layout_width="43dp"
+                android:layout_height="0dp"
+                android:background="@color/loodosDarker"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                card_view:srcCompat="@drawable/skypelogo" />
+
+            <ImageButton
+                android:id="@+id/ib_call"
+                android:layout_width="43dp"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                android:background="@color/loodosLight"
+                android:clickable="true"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/ib_mesaj"
+                app:layout_constraintTop_toTopOf="parent"
+                card_view:srcCompat="@drawable/phone" />
+
+            <ImageButton
+                android:id="@+id/ib_mesaj"
+                android:layout_width="43dp"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                android:background="@color/loodos"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/ib_email"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5"
+                card_view:srcCompat="@drawable/message" />
+
+            <ImageButton
+                android:id="@+id/ib_email"
+                android:layout_width="43dp"
+                android:layout_height="0dp"
+                android:background="@color/loodosDark"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/ib_skype"
+                app:layout_constraintTop_toTopOf="parent"
+                card_view:srcCompat="@drawable/mail" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/employeeclicklayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:cardBackgroundColor="@android:color/holo_blue_light"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:id="@+id/empitem_leftLine"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_gravity="start|end"
+                android:background="@color/loodosDark"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/empitem_image"
+                android:layout_width="64dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="8dp"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:src="@drawable/cirle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="h,1:1"
+                app:layout_constraintLeft_toRightOf="@+id/empitem_leftLine"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="16dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="@string/default_text"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toRightOf="@+id/empitem_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="50dp"
+                android:text="@string/default_text"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/empitem_image"
+                android:layout_marginLeft="45dp" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </com.daimajia.swipe.SwipeLayout>
+
+
+</android.support.v7.widget.CardView>

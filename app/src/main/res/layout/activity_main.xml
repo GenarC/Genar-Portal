@@ -1,18 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.loodos.loodoswe.activity.MainActivity"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.genar.portal.MainActivity">
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</android.support.constraint.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/ibtn_employee"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:adjustViewBounds="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:cropToPadding="true"
+            android:scaleType="centerInside"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/employees" />
+
+        <TextView
+            android:id="@+id/txt_button1"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:background="@drawable/gradient_textbackground"
+            android:gravity="bottom"
+            android:paddingBottom="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="12dp"
+            android:paddingTop="2dp"
+            android:text="@string/btn_txt_calisanbilgi"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/loodosBackground"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/ibtn_application"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/ibtn_application"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibtn_employee"
+            app:srcCompat="@drawable/apps" />
+
+        <TextView
+            android:id="@+id/txt_button2"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/gradient_textbackground"
+            android:gravity="bottom"
+            android:paddingBottom="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="12dp"
+            android:paddingTop="2dp"
+            android:text="@string/btn_txt_uygulamalar"
+            android:textAlignment="textStart"
+            android:textColor="@color/loodosBackground"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/ibtn_technews"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/ibtn_technews"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibtn_application"
+            app:srcCompat="@drawable/technews" />
+
+        <TextView
+            android:id="@+id/txt_button3"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/gradient_textbackground"
+            android:gravity="bottom"
+            android:paddingBottom="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="12dp"
+            android:paddingTop="2dp"
+            android:text="@string/techNews"
+            android:textColor="@color/loodosBackground"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/ibtn_notifications"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/ibtn_notifications"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibtn_technews"
+            app:srcCompat="@drawable/announcements" />
+
+        <TextView
+            android:id="@+id/txt_btn_notifications"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/gradient_textbackground"
+            android:gravity="bottom"
+            android:paddingBottom="8dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="12dp"
+            android:paddingTop="2dp"
+            android:text="@string/btn_txt_notifications"
+            android:textAlignment="textStart"
+            android:textColor="@color/loodosBackground"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
+

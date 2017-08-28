@@ -2,20 +2,110 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.genar.portal">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <application
+        android:name=".GlobalApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/loodos"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <service
+            android:name=".service.NotificationAndMessagingService"
+            android:enabled="true"
+            android:exported="false">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
+        </service>
+        <service
+            android:name=".service.InstanceIDListenerService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/LoodosWe"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.EmployeeListActivity"
+            android:label="@string/btn_txt_calisanbilgi"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genar.portal.activity.MainActivity" />
         </activity>
+        <activity android:name=".activity.Login.LoginActivity"
+            android:noHistory="true"/>
+        <activity
+            android:name=".activity.SignUp.SignUpActivity"
+            android:label="@string/btn_signUp"
+            android:parentActivityName=".activity.Login.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genar.portal.activity.Login.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".activity.UserDetail.UserDetailActivity"
+            android:label="@string/userDetails"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genar.portal.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:parentActivityName=".activity.SignUp.SignUpActivity"
+            android:theme="@style/Base.Theme.AppCompat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genar.portal.activity.SignUp.SignUpActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ApplicationListActivity"
+            android:label="@string/btn_txt_uygulamalar"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genar.portal.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.NotificationListActivity"
+            android:label="@string/notifications"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genar.portal.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.NotificationAddActivity"
+            android:label="@string/notificationAdd"
+            android:parentActivityName=".activity.NotificationListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genar.portal.activity.NotificationListActivity" />
+        </activity>
+        <activity
+            android:name=".activity.TechNewsActivity"
+            android:label="@string/techNews"
+            android:parentActivityName=".activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.genar.portal.activity.MainActivity" />
+        </activity>
+        <activity android:name=".activity.SplashActivity"><intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
     </application>
 
 </manifest>

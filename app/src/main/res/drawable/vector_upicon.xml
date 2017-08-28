@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="64dp"
+    android:width="64dp"
+    android:viewportHeight="360"
+    android:viewportWidth="30" >
+    <group
+        android:name="rotationGroup"
+        android:pivotX="300.0"
+        android:pivotY="300.0"
+        android:rotation="0" >
+        <path
+            android:name="coneOut"
+            android:strokeColor="@color/loodosLight"
+            android:strokeWidth="16"
+            android:pathData="M10,175 L15,270 M15,90 L10,185" />
+
+    </group>
+</vector>

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#5586db</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorCardBackground">#fcfcfc</color>
+    <color name="deleteIconColor">#b22227</color>
+    <color name="lineSeperator">#dedede</color>
+    <color name="phoneGreen">#097600</color>
+    <color name="blurBackground">#70777373</color>
+    <color name="loodos">#3BAFBF</color>
+    <color name="loodosLight">#80cdd8</color>
+    <color name="loodosDark">#276e79</color>
+    <color name="loodosDarker">#123d43</color>
+    <color name="loodosBackground">#e2f6f9</color>
+
 </resources>

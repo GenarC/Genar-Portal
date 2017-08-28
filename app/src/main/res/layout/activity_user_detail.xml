@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#606b6c"
+    tools:context="com.loodos.loodoswe.activity.UserDetail.UserDetailActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/userDetail_cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="32dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.brouding.blockbutton.BlockButton
+                    android:id="@+id/detail_btnedit"
+                    android:layout_width="78dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginTop="4dp"
+                    app:buttonDisabledColor="@color/loodosDark"
+                    android:clickable="true"
+                    android:gravity="center_vertical|center_horizontal"
+                    app:buttonColor="@color/loodos"
+                    app:buttonGapColor="@color/loodosDark"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:pushDepthDp="4"
+                    tools:layout_editor_absoluteX="230dp">
+
+                    <TextView
+                        android:id="@+id/blockbutton_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/btn_edit"
+                        android:textColor="@color/loodosDarker"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </com.brouding.blockbutton.BlockButton>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/detail_profile_image"
+                    android:layout_width="96dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/profile_image"
+                    android:transitionName="imageTransName"
+                    android:visibility="visible"
+                    app:civ_border_color="@color/loodosLight"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/detail_labelname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/hint_signUp_name"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_profile_image" />
+
+                <EditText
+                    android:id="@+id/detail_txt_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/edittext_background"
+                    android:singleLine="true"
+                    android:text="@string/default_text"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="@+id/detail_labelname"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_labelname" />
+
+                <TextView
+                    android:id="@+id/detail_labelstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/hint_signUp_loodosPosition"
+                    app:layout_constraintLeft_toLeftOf="@+id/detail_labelname"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_txt_name" />
+
+                <EditText
+                    android:id="@+id/detail_txt_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/edittext_background"
+                    android:singleLine="true"
+                    android:text="@string/default_text"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="@+id/detail_labelstatus"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_labelstatus" />
+
+                <TextView
+                    android:id="@+id/detail_labelemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/hint_signUp_email"
+                    app:layout_constraintLeft_toLeftOf="@+id/detail_labelPhone"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_txtphone" />
+
+                <EditText
+                    android:id="@+id/detail_txt_email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/edittext_background"
+                    android:text="@string/default_text"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="@+id/detail_labelemail"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_labelemail" />
+
+                <TextView
+                    android:id="@+id/detail_labelskype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/hint_signUp_skype"
+                    app:layout_constraintLeft_toLeftOf="@+id/detail_labelemail"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_txt_email" />
+
+                <EditText
+                    android:id="@+id/detail_txt_skype"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/edittext_background"
+                    android:text="@string/default_text"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="@+id/detail_labelskype"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_labelskype" />
+
+                <TextView
+                    android:id="@+id/detail_labelPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/hint_signUp_phone"
+                    app:layout_constraintLeft_toLeftOf="@+id/detail_labelstatus"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_txt_status" />
+
+                <EditText
+                    android:id="@+id/detail_txtphone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/edittext_background"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:text="@string/default_text"
+                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toLeftOf="@+id/detail_labelPhone"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_labelPhone" />
+
+                <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                    android:id="@+id/detail_btn_logout"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/button_background"
+                    android:text="@string/btn_logOut"
+                    android:textColor="@color/loodosDarker"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_txt_skype"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:spinning_bar_color="@color/loodosDarker"
+                    app:spinning_bar_padding="6dp"
+                    app:spinning_bar_width="4dp" />
+
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+

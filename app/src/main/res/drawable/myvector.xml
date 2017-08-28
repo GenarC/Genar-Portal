@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="64dp"
+    android:width="64dp"
+    android:viewportHeight="600"
+    android:viewportWidth="600" >
+    <group
+        android:name="rotationGroup"
+        android:pivotX="300.0"
+        android:pivotY="300.0"
+        android:rotation="0" >
+        <path
+            android:name="coneOut"
+            android:strokeColor="#000000"
+            android:strokeWidth="2"
+            android:fillColor="#d15050"
+            android:pathData="M0,0 L60,150 L120,0 C120,-100 0,-100 0,0 " />
+        <path
+            android:name="coneIn"
+            android:strokeColor="#000000"
+            android:strokeWidth="2"
+            android:fillColor="#4c58c5"
+            android:pathData="M30,0 L60,75 L90,0 C90,-50 30,-50 30,0 " />
+        <path
+            android:name="semiCircle"
+            android:strokeColor="#000000"
+            android:strokeWidth="2"
+            android:fillColor="#cbdd66"
+            android:pathData="M35,-3 L85,-3 C85,-43 35,-43 35,-3 " />
+    </group>
+</vector>
