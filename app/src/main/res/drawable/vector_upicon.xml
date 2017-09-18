@@ -10,7 +10,7 @@
         android:rotation="0" >
         <path
             android:name="coneOut"
-            android:strokeColor="@color/loodosLight"
+            android:strokeColor="@color/genarLight"
             android:strokeWidth="16"
             android:pathData="M10,175 L15,270 M15,90 L10,185" />
 

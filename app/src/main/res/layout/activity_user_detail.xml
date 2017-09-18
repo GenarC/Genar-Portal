@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#606b6c"
-    tools:context="com.loodos.loodoswe.activity.UserDetail.UserDetailActivity">
+    tools:context="com.genar.portal.activity.UserDetail.UserDetailActivity">
 
     <android.support.v7.widget.CardView
         android:id="@+id/userDetail_cardView"
@@ -36,11 +36,11 @@
                     android:layout_height="40dp"
                     android:layout_marginEnd="4dp"
                     android:layout_marginTop="4dp"
-                    app:buttonDisabledColor="@color/loodosDark"
+                    app:buttonDisabledColor="@color/genarDark"
                     android:clickable="true"
                     android:gravity="center_vertical|center_horizontal"
-                    app:buttonColor="@color/loodos"
-                    app:buttonGapColor="@color/loodosDark"
+                    app:buttonColor="@color/genar"
+                    app:buttonGapColor="@color/genarDark"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:pushDepthDp="4"
@@ -56,7 +56,7 @@
                         android:paddingRight="12dp"
                         android:paddingTop="10dp"
                         android:text="@string/btn_edit"
-                        android:textColor="@color/loodosDarker"
+                        android:textColor="@color/genarDarker"
                         android:textSize="12sp"
                         android:textStyle="bold" />
 
@@ -72,7 +72,7 @@
                     android:src="@drawable/profile_image"
                     android:transitionName="imageTransName"
                     android:visibility="visible"
-                    app:civ_border_color="@color/loodosLight"
+                    app:civ_border_color="@color/genarLight"
                     app:civ_border_width="2dp"
                     app:layout_constraintDimensionRatio="h,1:1"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -208,14 +208,14 @@
                     android:layout_marginTop="8dp"
                     android:background="@drawable/button_background"
                     android:text="@string/btn_logOut"
-                    android:textColor="@color/loodosDarker"
+                    android:textColor="@color/genarDarker"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.502"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/detail_txt_skype"
                     app:layout_constraintVertical_bias="0.5"
-                    app:spinning_bar_color="@color/loodosDarker"
+                    app:spinning_bar_color="@color/genarDarker"
                     app:spinning_bar_padding="6dp"
                     app:spinning_bar_width="4dp" />
 

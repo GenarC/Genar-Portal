@@ -16,6 +16,7 @@ import com.genar.portal.R;
 import com.genar.portal.activity.FormView;
 import com.genar.portal.activity.SignUp.SignUpActivity;
 import com.genar.portal.helper.Utils;
+import com.google.android.gms.common.api.GoogleApiClient;
 
 import br.com.simplepass.loading_button_lib.customViews.CircularProgressButton;
 import br.com.simplepass.loading_button_lib.interfaces.OnAnimationEndListener;
@@ -33,6 +34,9 @@ public class LoginActivity extends AppCompatActivity implements FormView {
     CircularProgressButton btnLogin;
 
     private LoginPresenter presenter;
+
+    private GoogleApiClient mGoogleApiClient;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +58,16 @@ public class LoginActivity extends AppCompatActivity implements FormView {
                 return false;
             }
         });
+
+
+
+
+
+
+
+
+
+
 
     }
 

@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/loodosBackground"
-    tools:context="com.loodos.loodoswe.activity.Login.LoginActivity">
+    android:background="@color/genarBackground"
+    tools:context="com.genar.portal.activity.Login.LoginActivity">
 
     <ImageView
-        android:id="@+id/img_loodos"
+        android:id="@+id/img_genar"
+        android:transitionName="transitionLogo"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -17,14 +18,13 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:contentDescription="@string/img_loodos"
         app:layout_constraintBottom_toTopOf="@+id/login_mail"
-        app:layout_constraintDimensionRatio="h,9:1"
+        app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75"
-        app:srcCompat="@drawable/loodos" />
+        app:layout_constraintVertical_bias="0.751"
+        app:srcCompat="@drawable/logogenar" />
 
     <EditText
         android:id="@+id/login_mail"
@@ -72,11 +72,11 @@
         android:background="@drawable/button_background"
         android:text="@string/btn_login"
         android:textAllCaps="false"
-        android:textColor="@color/loodosDarker"
+        android:textColor="@color/genarDarker"
         app:layout_constraintBottom_toTopOf="@+id/guide_bottom75"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:spinning_bar_color="@color/loodosDarker"
+        app:spinning_bar_color="@color/genarDarker"
         app:spinning_bar_padding="6dp"
         app:spinning_bar_width="4dp" />
 
@@ -85,9 +85,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/guide_bottom75"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.75"
-        tools:layout_editor_absoluteY="425dp"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintGuide_percent="0.86" />
 
     <TextView
         android:id="@+id/login_btn_signup"
@@ -99,7 +97,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:text="@string/signUp"
-        android:textColor="@color/loodosDarker"
+        android:textColor="@color/genarDarker"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />

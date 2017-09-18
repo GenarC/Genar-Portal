@@ -4,10 +4,10 @@
     <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="android:windowContentTransitions">true</item>
-        <item name="colorPrimary">@color/loodosDarker</item>
+        <item name="colorPrimary">@color/genarDarker</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:titleTextColor">@color/loodosLight</item>
+        <item name="android:titleTextColor">@color/genarLight</item>
 
         <!-- specify enter and exit transitions -->
         <!-- options are: explode, slide, fade -->

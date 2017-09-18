@@ -214,6 +214,7 @@ class UserDetailInteractorImp implements UserDetailInteractor {
                 fAuth.signOut();
                 if (fAuth.getCurrentUser() == null) {
                     listener.onSignOut(LoginActivity.class);
+                    User.init(null);
                 }
             }
         };

@@ -60,7 +60,7 @@ public class EmployeeAdapter extends RecyclerView.Adapter<EmployeeAdapter.UserVi
         final User user = userList.get(position);
         animate(holder.cvView,position);
 
-        holder.llLeftLine.setBackgroundResource(R.color.loodosDark);
+        holder.llLeftLine.setBackgroundResource(R.color.genarDark);
 
 //      Item'ların solundaki çizgilere random renkler verir
         /*Random rnd = new Random();

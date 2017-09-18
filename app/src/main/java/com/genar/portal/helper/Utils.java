@@ -1,6 +1,7 @@
 package com.genar.portal.helper;
 
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -13,6 +14,7 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.Settings;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AlertDialog;
 
 import com.genar.portal.R;
@@ -29,6 +31,10 @@ public class Utils {
 
     public static void startActivity(Activity activity, Class c){
         activity.startActivity(new Intent(activity,c));
+        activity.finish();
+    }
+    public static void startActivityWithSharedOptions(Activity activity, Class c, ActivityOptionsCompat options){
+        activity.startActivity(new Intent(activity,c), options.toBundle());
         activity.finish();
     }
 

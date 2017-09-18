@@ -13,7 +13,7 @@
         android:layout_height="0dp"
         android:orientation="vertical"
         android:transitionName="imageTransName"
-        app:civ_border_color="@color/loodosLight"
+        app:civ_border_color="@color/genarLight"
         app:civ_border_width="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="w,1:1"

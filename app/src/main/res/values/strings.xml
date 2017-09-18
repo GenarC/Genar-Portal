@@ -1,10 +1,9 @@
 <resources>
-    <string name="app_name">Loodos We</string>
+    <string name="app_name">Genar-Portal</string>
     <string name="signUp">Hesabınız yoksa, buradan üye olabilirsiniz</string>
     <string name="btn_login">Giriş</string>
     <string name="email_hint">Kullanıcı Adı:</string>
     <string name="password_hint">Şifre:</string>
-    <string name="img_loodos">loodos icon</string>
     <string name="btn_txt_calisanbilgi">Çalışan Bilgileri</string>
     <string name="btn_txt_uygulamalar">Uygulamalar</string>
     <string name="minimum_password">Şifre en az 6 karakter olmalıdır</string>
@@ -60,6 +59,6 @@
     <string name="splashLoginErrorCheckNetwork">Uygulama açılırken hata oluştu, internet bağlantınızı kontrol edin</string>
     <string name="error_mustBeFilled">Bu alan boş bırakılamaz, alanı doldurup tekrar deneyin.</string>
     <string name="error_missingImage">Profil resmi boş bırakılamaz, profil resminizi seçip tekrar deneyin.</string>
-    <string name="LoodosWe">Loodos Biz</string>
+    <string name="GenarPortal">Genar-Portal</string>
     <string name="hint_signUp_skype">Skype ID:</string>
 </resources>

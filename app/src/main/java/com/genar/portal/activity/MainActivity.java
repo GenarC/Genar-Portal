@@ -56,9 +56,9 @@ public class MainActivity extends BaseActivity {
             case R.id.ibtn_employee:
                 Utils.startActivityWithoutFinish(this,EmployeeListActivity.class);
                 break;
-            case R.id.ibtn_application:
+           /* case R.id.ibtn_application:
                 Utils.startActivityWithoutFinish(this,ApplicationListActivity.class);
-                break;
+                break;*/
             case R.id.ibtn_notifications:
                 Utils.startActivityWithoutFinish(this,NotificationListActivity.class);
                 break;
